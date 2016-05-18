@@ -33,6 +33,7 @@ function convertFeature(features, feature, tolerance) {
         type = geom.type,
         coords = geom.coordinates,
         tags = feature.properties,
+        id = feature.id,
         i, j, rings;
 
     if (type === 'Point') {
